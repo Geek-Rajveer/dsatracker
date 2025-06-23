@@ -12,6 +12,10 @@ public class Problem {
     @Id
     private String id;
 
+    private String link;
+    private String notes; // Add this line
+
+
     // Title of the DSA problem (e.g., "Two Sum")
     private String title;
 
@@ -63,4 +67,20 @@ public class Problem {
     public void setSolved(boolean solved) {
         this.solved = solved;
     }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+    public String getNotes() {
+        return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
+    }
+
 }
